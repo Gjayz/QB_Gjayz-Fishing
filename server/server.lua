@@ -205,3 +205,14 @@ AddEventHandler('qb-fishing:server:SellItemFish', function(args)
         end
     end
 end)
+
+
+AddEventHandler('onResourceStart', function(resourceName)
+    if (GetCurrentResourceName() ~= resourceName) then
+        return
+    end
+    print("---------------------------------------------------------------------------------------------")
+    print("       ^Github ^5 --> ^https://github.com/Gjayz         "," ^Author Gjayz")
+    print("       ^Main Github ^5 --> ^https://github.com/gjayz099         ","QB-Core Fishing Job")
+    print("---------------------------------------------------------------------------------------------")
+end)
